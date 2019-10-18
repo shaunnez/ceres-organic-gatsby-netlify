@@ -21,13 +21,13 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "categories"
-    label: "Categories"
-    folder: "src/pages/categories"
+  - name: "category"
+    label: "Category"
+    folder: "src/pages/category"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "categories-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Image", name: "featuredimage", widget: image}

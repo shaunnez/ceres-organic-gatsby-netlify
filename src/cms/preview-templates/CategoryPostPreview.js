@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CategoryPostTemplate } from '../../templates/categories-post'
+import { CategoryPostTemplate } from '../../templates/category-post'
 
-const CategoriesPostPreview = ({ entry, widgetFor }) => (
+const CategoryPostPreview = ({ entry, widgetFor }) => (
   <CategoryPostTemplate
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
@@ -10,11 +10,11 @@ const CategoriesPostPreview = ({ entry, widgetFor }) => (
   />
 )
 
-CategoriesPostPreview.propTypes = {
+CategoryPostPreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default CategoriesPostPreview
+export default CategoryPostPreview
