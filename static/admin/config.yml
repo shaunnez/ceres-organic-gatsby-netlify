@@ -21,6 +21,24 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "categories"
+    label: "Categories"
+    folder: "src/pages/categories"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Product List"
+        name: "productList"
+        widget: "list"
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Photo, name: photo, widget: image }
+
   - name: "pages"
     label: "Pages"
     files:
