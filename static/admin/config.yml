@@ -25,9 +25,9 @@ collections:
     label: "Categories"
     folder: "src/pages/categories"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "categories-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
